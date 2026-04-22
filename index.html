@@ -1,546 +1,906 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Proquantic — Custom Software Development Company. Transform, Scale and Maximize ROI." />
-    <title>Proquantic — Custom Software Development Company</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  </head>
-  <body class="tw-bg-white tw-text-ink tw-antialiased tw-font-sans">
 
-    <!-- ============== HEADER ============== -->
-    <header class="tw-sticky tw-top-0 tw-z-40 tw-bg-white tw-border-b tw-border-black/5">
-      <div class="tw-max-w-container tw-mx-auto tw-px-5 tw-flex tw-items-center tw-justify-between tw-gap-8 tw-py-4">
-        <a href="#" class="tw-flex tw-items-center">
-          <img src="/figma/Image1.png" alt="Proquantic" class="tw-h-[50px] tw-w-auto tw-object-contain" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Proquantic — Custom Software Development Company. Transform, Scale and Maximize ROI." />
+  <title>Proquantic — Custom Software Development Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/scss/style.css" />
+  <link rel="stylesheet" href="./src/scss/all.css" />
+</head>
+
+<body class="tw-bg-white tw-text-ink tw-antialiased tw-font-sans">
+  <!-- ============== HEADER ============== -->
+  <header class="tw-sticky tw-top-0 tw-z-40 tw-bg-white tw-border-b tw-border-black/5">
+    <div class="tw-max-w-[1740px] tw-mx-auto tw-px-5 tw-flex tw-items-center tw-justify-between tw-gap-8 tw-py-4">
+      <a href="#" class="tw-flex tw-items-center">
+        <img src="./src/assets/images/logo.png" alt="Proquantic" class="tw-h-[50px] tw-w-auto tw-object-contain" />
+      </a>
+
+      <nav class="tw-hidden lg:tw-flex tw-items-center tw-gap-[35px] tw-font-dm tw-text-[18px] tw-text-ink-500">
+        <a href="#"
+          class="tw-inline-flex tw-items-center tw-gap-1.5 hover:tw-text-brand-blue-dark tw-transition-colors">
+          Services
+          <i class="fa-regular fa-chevron-down tw-text-xs tw-opacity-70"></i>
         </a>
-
-        <nav class="tw-hidden lg:tw-flex tw-items-center tw-gap-[35px] tw-font-dm tw-text-[18px] tw-text-ink-500">
-          <a href="#" class="tw-inline-flex tw-items-center tw-gap-1.5 hover:tw-text-brand-blue-dark tw-transition-colors">
-            Services
-            <img src="/figma/GridiconsDropdown.svg" alt="" class="tw-h-5 tw-w-5 tw-opacity-70" />
-          </a>
-          <a href="#" class="tw-inline-flex tw-items-center tw-gap-1.5 hover:tw-text-brand-blue-dark tw-transition-colors">
-            Industries
-            <img src="/figma/GridiconsDropdown1.svg" alt="" class="tw-h-5 tw-w-5 tw-opacity-70" />
-          </a>
-          <a href="#" class="tw-inline-flex tw-items-center tw-gap-1.5 hover:tw-text-brand-blue-dark tw-transition-colors">
-            Hire Developer
-            <img src="/figma/GridiconsDropdown1.svg" alt="" class="tw-h-5 tw-w-5 tw-opacity-70" />
-          </a>
-          <a href="#" class="tw-inline-flex tw-items-center tw-gap-1.5 hover:tw-text-brand-blue-dark tw-transition-colors">
-            Who we are
-            <img src="/figma/GridiconsDropdown1.svg" alt="" class="tw-h-5 tw-w-5 tw-opacity-70" />
-          </a>
-          <a href="#" class="hover:tw-text-brand-blue-dark tw-transition-colors">Blog</a>
-        </nav>
-
-        <a href="#" class="tw-hidden md:tw-inline-flex tw-items-center tw-gap-3 tw-bg-brand-green hover:tw-bg-brand-green-hover tw-text-white tw-font-dm tw-font-semibold tw-text-[18px] tw-rounded-pill tw-px-6 tw-py-[18px] tw-transition-colors">
-          Schedule a free consultation
-          <img src="/figma/Vector.svg" alt="" class="tw-h-3.5 tw-w-3.5 tw-invert tw-brightness-0" />
+        <a href="#"
+          class="tw-inline-flex tw-items-center tw-gap-1.5 hover:tw-text-brand-blue-dark tw-transition-colors">
+          Industries
+          <i class="fa-regular fa-chevron-down tw-text-xs tw-opacity-70"></i>
         </a>
-      </div>
-    </header>
+        <a href="#"
+          class="tw-inline-flex tw-items-center tw-gap-1.5 hover:tw-text-brand-blue-dark tw-transition-colors">
+          Hire Developer
+          <i class="fa-regular fa-chevron-down tw-text-xs tw-opacity-70"></i>
+        </a>
+        <a href="#"
+          class="tw-inline-flex tw-items-center tw-gap-1.5 hover:tw-text-brand-blue-dark tw-transition-colors">
+          Who we are
+          <i class="fa-regular fa-chevron-down tw-text-xs tw-opacity-70"></i>
+        </a>
+        <a href="#" class="hover:tw-text-brand-blue-dark tw-transition-colors">Blog</a>
+      </nav>
 
-    <!-- ============== HERO ============== -->
-    <section class="tw-relative tw-overflow-hidden tw-bg-hero-glow tw-py-20 lg:tw-py-24">
-      <img src="/figma/MaskGroup.svg" alt="" aria-hidden="true" class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-pointer-events-none tw-opacity-90" />
-      <div class="tw-relative tw-max-w-container tw-mx-auto tw-px-5">
-        <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-[1.1fr_0.9fr] tw-gap-12 lg:tw-gap-16 tw-items-center">
+      <a href="#"
+        class="tw-hidden md:tw-inline-flex tw-items-center tw-gap-3 tw-bg-brand-green hover:tw-bg-brand-green-hover tw-text-white tw-font-dm tw-font-semibold tw-text-[18px] tw-rounded-pill tw-px-6 tw-py-[18px] tw-transition-colors">
+        Schedule a free consultation
+        <img src="./src/assets/images/icon-arrow-up-right.svg" alt=""
+          class="tw-h-3.5 tw-w-3.5 tw-invert tw-brightness-0" />
+      </a>
+    </div>
+  </header>
 
-          <div>
-            <span class="tw-inline-block tw-font-display tw-font-semibold tw-text-[54px] md:tw-text-[60px] tw-leading-none tw-tracking-tight tw-text-ink">Custom</span>
-            <h1 class="tw-font-display tw-font-semibold tw-text-[48px] md:tw-text-[76px] xl:tw-text-d-xl tw-text-ink tw-mt-2 tw-mb-6">
-              <span class="tw-block tw-text-brand-blue-dark">Software Development</span>
-              <span class="tw-block">Company:</span>
-            </h1>
-            <p class="tw-text-[22px] tw-text-ink-300 tw-max-w-[520px] tw-mb-10 tw-leading-[1.5]">
-              Transform, Scale, and Maximize ROI
-            </p>
+  <!-- ============== HERO ============== -->
+  <section class="tw-relative tw-overflow-hidden tw-bg-hero-glow tw-py-20 lg:tw-py-24">
+    <img src="./src/assets/images/hero-bg-mask.svg" alt="" aria-hidden="true"
+      class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-pointer-events-none tw-opacity-90" />
+    <div class="tw-relative tw-container">
+      <div class="tw-grid tw-grid-cols-12">
+        <div class="tw-col-span-6">
+          <h1
+            class="2xl:-tw-mr-14 tw-font-display tw-font-semibold tw-text-[48px] md:tw-text-[76px] xl:tw-text-d-xl tw-text-ink tw-mt-2 tw-mb-6">
+            <span class="tw-text-[54px] md:tw-text-[60px] tw-leading-none tw-tracking-tight tw-text-ink">Custom</span>
+            <span class="tw-text-brand-blue-dark">Software Development</span>
+            <span class="tw-block">Company:</span>
+          </h1>
+          <p class="tw-text-h-lg tw-font-semibold tw-text-ink tw-max-w-[520px] tw-mt-11 tw-mb-28 tw-leading-[1.5]">
+            Transform, Scale, and Maximize ROI
+          </p>
 
-            <div class="tw-flex tw-flex-wrap tw-items-center tw-gap-4">
-              <a href="#" class="tw-inline-flex tw-items-center tw-gap-3 tw-bg-brand-blue hover:tw-bg-brand-blue-dark tw-text-white tw-font-dm tw-font-semibold tw-text-[20px] tw-rounded-pill tw-px-8 tw-py-[18px] tw-transition-colors">
-                Schedule a Demo
-                <span class="tw-inline-flex tw-h-7 tw-w-7 tw-items-center tw-justify-center tw-rounded-full tw-bg-white tw-text-brand-blue">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3.5 tw-w-3.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-              </a>
-            </div>
+          <div class="tw-flex tw-flex-wrap tw-items-center tw-gap-4">
+            <a href="#"
+              class="tw-group tw-inline-flex tw-items-center tw-gap-3 tw-bg-brand-blue hover:tw-bg-brand-blue-dark tw-text-white tw-font-dm tw-font-semibold tw-text-2xl tw-rounded-pill tw-px-8 tw-py-[18px] tw-shadow-[0_8px_20px_rgba(32,49,175,0.18)] hover:tw-shadow-[0_14px_30px_rgba(32,49,175,0.32)] hover:-tw-translate-y-0.5 tw-transition-[background-color,box-shadow,transform] tw-duration-300 tw-ease-out tw-will-change-transform">
+              Schedule a Demo
+              <i
+                class="fa-sharp-duotone fa-light fa-arrow-right-long tw-text-3xl tw-transition-transform tw-duration-300 tw-ease-out group-hover:tw-translate-x-1"></i>
+            </a>
           </div>
+        </div>
 
-          <div class="tw-relative tw-min-h-[560px] tw-flex tw-items-center tw-justify-center">
-            <!-- Phone mockup frame from Figma -->
-            <img src="/figma/Vector159.png" alt="Phone mockup" class="tw-relative tw-z-10 tw-h-[620px] tw-w-auto tw-object-contain" />
-            <!-- Phone screen content -->
-            <img src="/figma/Image92.png" alt="App dashboard" class="tw-absolute tw-z-20 tw-left-1/2 -tw-translate-x-1/2 tw-top-1/2 -tw-translate-y-1/2 tw-h-[560px] tw-w-auto tw-object-contain tw-rounded-[36px]" />
+        <div class="tw-relative tw-col-span-3 -tw-mx-10">
+          <!-- Phone screen content -->
+          <img src="./src/assets/images/accelerate-phone.png" alt="App dashboard" class="tw-w-full tw-h-full" />
+        </div>
 
-            <!-- Floating stat card -->
-            <div class="tw-absolute tw-top-8 tw-right-0 tw-z-30 tw-bg-white tw-rounded-2xl tw-px-5 tw-py-4 tw-shadow-[0_12px_32px_rgba(0,0,0,0.08)] tw-flex tw-items-center tw-gap-3">
-              <img src="/figma/Ellipse1535.png" alt="" class="tw-h-11 tw-w-11 tw-rounded-full tw-object-cover" />
-              <div>
-                <div class="tw-text-[14px] tw-text-ink-300">Total traffic</div>
-                <div class="tw-text-[26px] tw-font-bold tw-text-ink tw-tracking-tight">2.3M+</div>
+        <div class="tw-col-span-3 tw-flex tw-flex-col tw-justify-end">
+          <div class="tw-flex tw-items-center tw-gap-6 tw-mb-10">
+            <div class="tw-flex -tw-space-x-5">
+              <img src="./src/assets/images/user-avatar-1.png" alt="User"
+                class="tw-h-20 tw-w-20 tw-rounded-full tw-border-2 tw-border-white tw-shadow-md tw-object-cover" />
+              <img src="./src/assets/images/user-avatar-2.png" alt="User"
+                class="tw-h-20 tw-w-20 tw-rounded-full tw-border-2 tw-border-white tw-shadow-md tw-object-cover" />
+            </div>
+            <div>
+              <div class="tw-text-4xl tw-text-ink tw-leading-none tw-tracking-tight">
+                2.3M+
+              </div>
+              <div class="tw-text-lg tw-text-ink-300 tw-mt-1">
+                Total traffic
               </div>
             </div>
           </div>
 
+          <p class="tw-text-xl tw-text-ink-300 !tw-leading-normal tw-max-w-[420px]">
+            Partner with Proquantic for custom application development
+            services that solve modern business challenges and keep you ahead.
+          </p>
         </div>
       </div>
-    </section>
-
-    <!-- ============== PARTNERS ============== -->
-    <section class="tw-py-20 lg:tw-py-24 tw-bg-white">
-      <div class="tw-max-w-container tw-mx-auto tw-px-5">
-        <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-[0.4fr_0.6fr] tw-gap-12 tw-items-center">
-          <div>
-            <h2 class="tw-font-display tw-font-semibold tw-text-[44px] lg:tw-text-d-lg tw-text-ink tw-leading-[1.05] tw-tracking-tight tw-mb-4">Our Partners</h2>
-            <p class="tw-text-[20px] tw-text-ink-300 tw-leading-[1.5] tw-max-w-[420px]">
-              We proudly collaborate with trusted partners to deliver exceptional results.
-            </p>
-          </div>
-
-          <div class="logo-slider">
-            <div><div class="tw-h-24 tw-flex tw-items-center tw-justify-center tw-px-6"><img src="/figma/Image83.png" alt="Partner" class="tw-max-h-16 tw-w-auto tw-object-contain tw-opacity-80 hover:tw-opacity-100 tw-transition-opacity" /></div></div>
-            <div><div class="tw-h-24 tw-flex tw-items-center tw-justify-center tw-px-6"><img src="/figma/Image84.png" alt="Partner" class="tw-max-h-16 tw-w-auto tw-object-contain tw-opacity-80 hover:tw-opacity-100 tw-transition-opacity" /></div></div>
-            <div><div class="tw-h-24 tw-flex tw-items-center tw-justify-center tw-px-6"><img src="/figma/Image85.png" alt="Partner" class="tw-max-h-16 tw-w-auto tw-object-contain tw-opacity-80 hover:tw-opacity-100 tw-transition-opacity" /></div></div>
-            <div><div class="tw-h-24 tw-flex tw-items-center tw-justify-center tw-px-6"><img src="/figma/Image86.png" alt="Partner" class="tw-max-h-16 tw-w-auto tw-object-contain tw-opacity-80 hover:tw-opacity-100 tw-transition-opacity" /></div></div>
-            <div><div class="tw-h-24 tw-flex tw-items-center tw-justify-center tw-px-6"><img src="/figma/Image87.png" alt="Partner" class="tw-max-h-16 tw-w-auto tw-object-contain tw-opacity-80 hover:tw-opacity-100 tw-transition-opacity" /></div></div>
-          </div>
-        </div>
+      <div
+        class="animate-float-rotate tw-absolute tw-bottom-44 tw-right-[52%] tw-text-brand-blue/20 tw-text-2xl tw-hidden lg:tw-block">
+        <img src="./src/assets/images/plus-hero.svg" alt="" width="30" height="30" class="tw-relative tw-z-10" />
       </div>
-    </section>
-
-    <!-- ============== ABOUT ============== -->
-    <section class="tw-py-20 lg:tw-py-24 tw-bg-white">
-      <div class="tw-max-w-container tw-mx-auto tw-px-5 tw-text-center">
-        <h2 class="tw-font-display tw-font-semibold tw-text-h-xl tw-tracking-tight tw-text-ink tw-max-w-[980px] tw-mx-auto tw-mb-6">
-          Custom Software Development Backed by Proven Expertise
-        </h2>
-        <p class="tw-text-[20px] tw-text-ink-300 tw-leading-[1.6] tw-max-w-[1080px] tw-mx-auto tw-mb-12">
-          We build future digital capabilities, taking challenges head-on dovetailing innovation and expertise. Our custom application development services bridge the gap between what's needed and what's best for your business.
-        </p>
-
-        <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-10 tw-items-center tw-text-left">
-          <ul class="tw-grid tw-gap-5 tw-m-0 tw-p-0 tw-list-none">
-            <li class="tw-flex tw-gap-3.5 tw-items-start tw-text-[20px] tw-text-ink-700 tw-leading-[1.5]">
-              <img src="/figma/WeuiDone2Filled.svg" alt="" class="tw-flex-none tw-h-7 tw-w-7 tw-mt-0.5" />
-              End-to-End Custom Software Solutions
-            </li>
-            <li class="tw-flex tw-gap-3.5 tw-items-start tw-text-[20px] tw-text-ink-700 tw-leading-[1.5]">
-              <img src="/figma/WeuiDone2Filled.svg" alt="" class="tw-flex-none tw-h-7 tw-w-7 tw-mt-0.5" />
-              AI-Powered Innovation for Competitive Advantage
-            </li>
-            <li class="tw-flex tw-gap-3.5 tw-items-start tw-text-[20px] tw-text-ink-700 tw-leading-[1.5]">
-              <img src="/figma/WeuiDone2Filled.svg" alt="" class="tw-flex-none tw-h-7 tw-w-7 tw-mt-0.5" />
-              Driven by Breakthrough Technologies
-            </li>
-            <li class="tw-flex tw-gap-3.5 tw-items-start tw-text-[20px] tw-text-ink-700 tw-leading-[1.5]">
-              <img src="/figma/WeuiDone2Filled.svg" alt="" class="tw-flex-none tw-h-7 tw-w-7 tw-mt-0.5" />
-              Secure and Scalable Digital Transformation
-            </li>
-          </ul>
-
-          <div class="tw-relative tw-aspect-[5/4] tw-rounded-card tw-overflow-hidden">
-            <img src="/figma/Rectangle58.png" alt="Custom software solutions" class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover" />
-            <div class="tw-absolute tw-inset-x-6 tw-bottom-6 tw-bg-white/95 tw-backdrop-blur tw-rounded-2xl tw-px-5 tw-py-4 tw-font-dm tw-font-semibold tw-text-ink">
-              Custom software solutions primed to perform from day one.
-              <a href="#" class="tw-mt-2 tw-inline-flex tw-items-center tw-gap-2 tw-text-brand-blue-dark tw-text-[14px]">
-                Read More
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3 tw-w-3"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
+      <div
+        class="animate-pulse-fade tw-absolute -tw-top-2 tw-right-[15%] tw-text-brand-blue/20 tw-text-xl tw-hidden lg:tw-block">
+        <img src="./src/assets/images/plus-hero.svg" alt="" width="54" height="54" class="tw-relative tw-z-10" />
       </div>
-    </section>
-
-    <!-- ============== WE ARE DIFFERENT ============== -->
-    <section class="tw-py-20 lg:tw-py-24 tw-bg-surface-muted">
-      <div class="tw-max-w-container tw-mx-auto tw-px-5">
-        <h2 class="tw-font-display tw-font-semibold tw-text-h-xl tw-tracking-tight tw-text-ink tw-text-center tw-max-w-[860px] tw-mx-auto tw-mb-4">
-          We are Different Because
-        </h2>
-        <p class="tw-text-[20px] tw-text-ink-300 tw-text-center tw-max-w-[760px] tw-mx-auto tw-mb-14 tw-leading-[1.55]">
-          We believe success lies in the perfect blend of the right team, cutting-edge technology, and flawless execution.
-        </p>
-
-        <div class="tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 xl:tw-grid-cols-4 tw-gap-6">
-          <article class="tw-bg-white tw-rounded-card tw-p-8 tw-border tw-border-black/5 tw-shadow-soft tw-transition tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
-            <div class="tw-w-full tw-aspect-[4/3] tw-rounded-2xl tw-overflow-hidden tw-mb-5"><img src="/figma/Rectangle60.png" alt="" class="tw-w-full tw-h-full tw-object-cover" /></div>
-            <h3 class="tw-text-[22px] tw-font-semibold tw-text-ink tw-mb-2.5 tw-tracking-tight">Dedicated Engineering Lead</h3>
-            <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55]">Direct access to a senior engineer leading delivery—no layers of account management between you and the team.</p>
-          </article>
-
-          <article class="tw-bg-white tw-rounded-card tw-p-8 tw-border tw-border-black/5 tw-shadow-soft tw-transition tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
-            <div class="tw-w-full tw-aspect-[4/3] tw-rounded-2xl tw-overflow-hidden tw-mb-5"><img src="/figma/Rectangle4959.png" alt="" class="tw-w-full tw-h-full tw-object-cover" /></div>
-            <h3 class="tw-text-[22px] tw-font-semibold tw-text-ink tw-mb-2.5 tw-tracking-tight">Senior, Scalability-Experienced Team</h3>
-            <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55]">We staff experienced engineers who've built and operated systems for growth, performance, and reliability.</p>
-          </article>
-
-          <article class="tw-bg-white tw-rounded-card tw-p-8 tw-border tw-border-black/5 tw-shadow-soft tw-transition tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
-            <div class="tw-w-full tw-aspect-[4/3] tw-rounded-2xl tw-overflow-hidden tw-mb-5"><img src="/figma/Rectangle4960.png" alt="" class="tw-w-full tw-h-full tw-object-cover" /></div>
-            <h3 class="tw-text-[22px] tw-font-semibold tw-text-ink tw-mb-2.5 tw-tracking-tight">Maintainable, Long-Term Codebase</h3>
-            <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55]">We focus on clean architecture, consistent standards, and documentation so the system stays easy to extend.</p>
-          </article>
-
-          <article class="tw-bg-white tw-rounded-card tw-p-8 tw-border tw-border-black/5 tw-shadow-soft tw-transition tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
-            <div class="tw-w-full tw-aspect-[4/3] tw-rounded-2xl tw-overflow-hidden tw-mb-5"><img src="/figma/Rectangle4961.png" alt="" class="tw-w-full tw-h-full tw-object-cover" /></div>
-            <h3 class="tw-text-[22px] tw-font-semibold tw-text-ink tw-mb-2.5 tw-tracking-tight">Transparent Delivery</h3>
-            <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55]">Track progress in real time through the TrueTimer portal, with clear visibility into what's in progress, shipped, and next.</p>
-          </article>
-        </div>
+      <div
+        class="animate-drift-rotate tw-absolute tw-top-52 tw-right-[20%] tw-text-brand-blue/15 tw-text-lg tw-hidden lg:tw-block">
+        <img src="./src/assets/images/plus-hero.svg" alt="" width="30" height="30" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ============== DARK CTA BAND ============== -->
-    <section class="tw-bg-surface-dark tw-text-white tw-py-12">
-      <div class="tw-max-w-container tw-mx-auto tw-px-5 tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-gap-8">
-        <h3 class="tw-font-display tw-font-semibold tw-text-[32px] md:tw-text-h-lg tw-leading-[1.15] tw-tracking-tight tw-max-w-[700px]">
-          Ready to innovate<br/>and drive an impact?
-        </h3>
-        <a href="#" class="tw-inline-flex tw-items-center tw-gap-3 tw-bg-brand-green hover:tw-bg-brand-green-hover tw-text-white tw-font-dm tw-font-semibold tw-text-[18px] tw-rounded-pill tw-px-7 tw-py-[18px] tw-transition-colors">
-          Speak With Us
-          <span class="tw-inline-flex tw-h-7 tw-w-7 tw-items-center tw-justify-center tw-rounded-full tw-bg-white tw-text-brand-green">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3.5 tw-w-3.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-        </a>
-      </div>
-    </section>
-
-    <!-- ============== SERVICES ============== -->
-    <section class="tw-py-20 lg:tw-py-24 tw-bg-white">
-      <div class="tw-max-w-container tw-mx-auto tw-px-5">
-        <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-6 tw-items-end tw-mb-14">
-          <h2 class="tw-font-display tw-font-semibold tw-text-h-xl tw-tracking-tight tw-text-ink tw-leading-[1.15]">Our Custom Software Development Services</h2>
-          <p class="tw-text-[18px] tw-text-ink-300 tw-leading-[1.55] tw-max-w-[600px]">
-            A comprehensive suite of software development services designed to address evolving client requirements and guide SMBs, startups, or enterprises in their digital transformation journey.
+  <!-- ============== PARTNERS ============== -->
+  <section class="tw-py-20 lg:tw-py-24 border-gradient">
+    <div class="tw-container">
+      <div class="tw-grid tw-grid-cols-2 tw-gap-12 tw-items-center">
+        <div>
+          <h2
+            class="tw-font-display tw-font-semibold tw-text-[44px] lg:tw-text-d-lg tw-text-ink tw-leading-[1.05] tw-tracking-tight tw-mb-7">
+            Our Partners
+          </h2>
+          <p class="tw-text-xl tw-text-ink-300 tw-leading-relaxed tw-max-w-[420px]">
+            We proudly collaborate with trusted partners to deliver
+            exceptional results.
           </p>
         </div>
 
-        <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 xl:tw-grid-cols-3 tw-gap-6">
-          <article class="tw-group tw-bg-white tw-border tw-border-black/5 hover:tw-border-brand-blue tw-rounded-card tw-p-9 tw-flex tw-flex-col tw-gap-4 tw-transition-all tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
-            <div class="tw-font-display tw-font-semibold tw-text-[18px] tw-text-ink-200 tw-tracking-widest">01</div>
-            <h3 class="tw-text-[24px] tw-font-semibold tw-text-ink tw-tracking-tight">Mobile Application Development</h3>
-            <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55] tw-flex-1">User-centric, AI-enabled apps that maximize engagement and create brand value by winning customers and driving sales.</p>
-            <a href="#" class="tw-inline-flex tw-items-center tw-gap-2 tw-text-brand-green tw-font-dm tw-font-semibold tw-text-[15px]">
-              Explore More
-              <span class="tw-inline-flex tw-h-[22px] tw-w-[22px] tw-items-center tw-justify-center tw-rounded-full tw-bg-brand-green tw-text-white tw-transition-transform group-hover:tw-translate-x-0.5">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3 tw-w-3"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </a>
-          </article>
+        <div class="tw-grid tw-grid-cols-3">
+          <div class="tw-h-24 tw-flex tw-items-center tw-px-6">
+            <img src="./src/assets/images/partner-1.png" alt="Partner"
+              class="tw-max-h-16 tw-w-auto tw-object-contain hover:tw-opacity-80 tw-transition-opacity" />
+          </div>
+          <div class="tw-h-24 tw-flex tw-items-center tw-px-6">
+            <img src="./src/assets/images/partner-2.png" alt="Partner"
+              class="tw-max-h-16 tw-w-auto tw-object-contain hover:tw-opacity-80 tw-transition-opacity" />
+          </div>
+          <div class="tw-h-24 tw-flex tw-items-center tw-px-6">
+            <img src="./src/assets/images/partner-3.png" alt="Partner"
+              class="tw-max-h-16 tw-w-auto tw-object-contain hover:tw-opacity-80 tw-transition-opacity" />
+          </div>
+          <div class="tw-h-24 tw-flex tw-items-center tw-px-6">
+            <img src="./src/assets/images/partner-4.png" alt="Partner"
+              class="tw-max-h-16 tw-w-auto tw-object-contain hover:tw-opacity-80 tw-transition-opacity" />
+          </div>
+          <div class="tw-h-24 tw-flex tw-items-center tw-px-6">
+            <img src="./src/assets/images/partner-5.png" alt="Partner"
+              class="tw-max-h-16 tw-w-auto tw-object-contain hover:tw-opacity-80 tw-transition-opacity" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <article class="tw-group tw-bg-white tw-border tw-border-black/5 hover:tw-border-brand-blue tw-rounded-card tw-p-9 tw-flex tw-flex-col tw-gap-4 tw-transition-all tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
-            <div class="tw-font-display tw-font-semibold tw-text-[18px] tw-text-ink-200 tw-tracking-widest">02</div>
-            <h3 class="tw-text-[24px] tw-font-semibold tw-text-ink tw-tracking-tight">Enterprise Applications Development</h3>
-            <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55] tw-flex-1">Streamline your operations and enable cooperative workflows without reinventing the wheel with cost and time savings.</p>
-            <a href="#" class="tw-inline-flex tw-items-center tw-gap-2 tw-text-brand-green tw-font-dm tw-font-semibold tw-text-[15px]">
-              Explore More
-              <span class="tw-inline-flex tw-h-[22px] tw-w-[22px] tw-items-center tw-justify-center tw-rounded-full tw-bg-brand-green tw-text-white tw-transition-transform group-hover:tw-translate-x-0.5">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3 tw-w-3"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </a>
-          </article>
+  <!-- ============== ABOUT ============== -->
+  <section class="tw-py-20 lg:tw-py-24 tw-bg-white">
+    <div class="tw-container">
+      <div class="tw-text-center tw-mb-14">
+        <h2
+          class="tw-font-display tw-font-semibold tw-text-[40px] md:tw-text-[54px] lg:tw-text-d-lg tw-tracking-tight tw-text-ink tw-mb-5">
+          Custom Software Development Backed by Proven Expertise
+        </h2>
+        <p class="tw-text-xl tw-text-ink-300">
+          We build future digital capabilities, taking challenges head-on dovetailing innovation and expertise. Our
+          custom application development services bridge the gap between what's needed and what's best for your
+          business.
+        </p>
+      </div>
 
-          <article class="tw-group tw-bg-white tw-border tw-border-black/5 hover:tw-border-brand-blue tw-rounded-card tw-p-9 tw-flex tw-flex-col tw-gap-4 tw-transition-all tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
-            <div class="tw-font-display tw-font-semibold tw-text-[18px] tw-text-ink-200 tw-tracking-widest">03</div>
-            <h3 class="tw-text-[24px] tw-font-semibold tw-text-ink tw-tracking-tight">Cloud Solution</h3>
-            <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55] tw-flex-1">Achieve scalability, security, and agility with end-to-end cloud solutions while reducing cloud TCO for efficient team delivery.</p>
-            <a href="#" class="tw-inline-flex tw-items-center tw-gap-2 tw-text-brand-green tw-font-dm tw-font-semibold tw-text-[15px]">
-              Explore More
-              <span class="tw-inline-flex tw-h-[22px] tw-w-[22px] tw-items-center tw-justify-center tw-rounded-full tw-bg-brand-green tw-text-white tw-transition-transform group-hover:tw-translate-x-0.5">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3 tw-w-3"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </a>
-          </article>
+      <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-[1.2fr_1fr_1fr] tw-gap-6">
 
-          <article class="tw-group tw-bg-white tw-border tw-border-black/5 hover:tw-border-brand-blue tw-rounded-card tw-p-9 tw-flex tw-flex-col tw-gap-4 tw-transition-all tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
-            <div class="tw-font-display tw-font-semibold tw-text-[18px] tw-text-ink-200 tw-tracking-widest">04</div>
-            <h3 class="tw-text-[24px] tw-font-semibold tw-text-ink tw-tracking-tight">Custom Software Development</h3>
-            <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55] tw-flex-1">Custom software solutions for resolving operational bottlenecks or IT infrastructure modernization for the business edge.</p>
-            <a href="#" class="tw-inline-flex tw-items-center tw-gap-2 tw-text-brand-green tw-font-dm tw-font-semibold tw-text-[15px]">
-              Explore More
-              <span class="tw-inline-flex tw-h-[22px] tw-w-[22px] tw-items-center tw-justify-center tw-rounded-full tw-bg-brand-green tw-text-white tw-transition-transform group-hover:tw-translate-x-0.5">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3 tw-w-3"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </a>
-          </article>
-
-          <article class="tw-group tw-bg-white tw-border tw-border-black/5 hover:tw-border-brand-blue tw-rounded-card tw-p-9 tw-flex tw-flex-col tw-gap-4 tw-transition-all tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
-            <div class="tw-font-display tw-font-semibold tw-text-[18px] tw-text-ink-200 tw-tracking-widest">05</div>
-            <h3 class="tw-text-[24px] tw-font-semibold tw-text-ink tw-tracking-tight">Data and Artificial Intelligence (AI)</h3>
-            <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55] tw-flex-1">Our team leverages NLP, BI, and complex data analytics to suggest the best engagement model to help you achieve data-first modernization.</p>
-            <a href="#" class="tw-inline-flex tw-items-center tw-gap-2 tw-text-brand-green tw-font-dm tw-font-semibold tw-text-[15px]">
-              Explore More
-              <span class="tw-inline-flex tw-h-[22px] tw-w-[22px] tw-items-center tw-justify-center tw-rounded-full tw-bg-brand-green tw-text-white tw-transition-transform group-hover:tw-translate-x-0.5">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3 tw-w-3"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </a>
-          </article>
-
-          <article class="tw-group tw-bg-white tw-border tw-border-black/5 hover:tw-border-brand-blue tw-rounded-card tw-p-9 tw-flex tw-flex-col tw-gap-4 tw-transition-all tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
-            <div class="tw-font-display tw-font-semibold tw-text-[18px] tw-text-ink-200 tw-tracking-widest">06</div>
-            <h3 class="tw-text-[24px] tw-font-semibold tw-text-ink tw-tracking-tight">DevOps Consulting Services</h3>
-            <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55] tw-flex-1">Reduce time-to-market and costs by building, testing, and releasing high-quality software quickly and reliably.</p>
-            <a href="#" class="tw-inline-flex tw-items-center tw-gap-2 tw-text-brand-green tw-font-dm tw-font-semibold tw-text-[15px]">
-              Explore More
-              <span class="tw-inline-flex tw-h-[22px] tw-w-[22px] tw-items-center tw-justify-center tw-rounded-full tw-bg-brand-green tw-text-white tw-transition-transform group-hover:tw-translate-x-0.5">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3 tw-w-3"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </a>
-          </article>
+        <!-- Col 1 · Left muted card with checklist + closing paragraph -->
+        <div
+          class="tw-bg-surface-muted tw-rounded-card tw-p-8 lg:tw-p-10 tw-flex tw-flex-col tw-justify-between tw-gap-8">
+          <ul class="tw-grid tw-gap-5 tw-m-0 tw-p-0 tw-list-none">
+            <li class="tw-flex tw-gap-3.5 tw-items-start tw-text-lg tw-text-ink-300">
+              <i class="fa-solid fa-play tw-text-brand-green tw-text-[11px] tw-mt-[10px] tw-flex-none"></i>
+              End-to-End Custom Software Solutions
+            </li>
+            <li class="tw-flex tw-gap-3.5 tw-items-start tw-text-lg tw-text-ink-300">
+              <i class="fa-solid fa-play tw-text-brand-green tw-text-[11px] tw-mt-[10px] tw-flex-none"></i>
+              AI-Powered Innovation for Competitive Advantage
+            </li>
+            <li class="tw-flex tw-gap-3.5 tw-items-start tw-text-lg tw-text-ink-300">
+              <i class="fa-solid fa-play tw-text-brand-green tw-text-[11px] tw-mt-[10px] tw-flex-none"></i>
+              Driven by Breakthrough Technologies
+            </li>
+            <li class="tw-flex tw-gap-3.5 tw-items-start tw-text-lg tw-text-ink-300">
+              <i class="fa-solid fa-play tw-text-brand-green tw-text-[11px] tw-mt-[10px] tw-flex-none"></i>
+              Secure and Scalable Digital Transformation
+            </li>
+          </ul>
+          <p class="tw-text-xl tw-text-ink tw-leading-[30px]">
+            We believe success lies in the perfect blend of the right team, cutting-edge technology, and flawless
+            execution.
+          </p>
         </div>
 
-        <div class="tw-text-center tw-mt-12">
-          <a href="#" class="tw-inline-flex tw-items-center tw-gap-3 tw-bg-brand-green hover:tw-bg-brand-green-hover tw-text-white tw-font-dm tw-font-semibold tw-text-[18px] tw-rounded-pill tw-px-7 tw-py-[16px] tw-transition-colors">
-            Load More
-            <span class="tw-inline-flex tw-h-7 tw-w-7 tw-items-center tw-justify-center tw-rounded-full tw-bg-white tw-text-brand-green">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3.5 tw-w-3.5"><path d="M12 5v14M5 12l7 7 7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <!-- Col 2 · Middle stack: blue stat card + collab photo -->
+        <div class="tw-grid tw-gap-3 tw-grid-rows-[1fr_auto]">
+          <div
+            class="tw-bg-brand-blue tw-text-white tw-rounded-card tw-p-8 lg:tw-p-8 tw-flex tw-flex-col tw-justify-between tw-gap-6">
+            <h3 class="tw-font-display tw-text-[30px] tw-leading-[38px] tw-tracking-tight">
+              <span class="tw-font-bold">150+</span> Transformation Stories
+            </h3>
+            <div class="tw-border-t-[1px] tw-border-image-fade -tw-mx-8"></div>
+            <p class="tw-text-xl tw-text-white/80">
+              Custom software solutions primed to perform from day one.
+            </p>
+          </div>
+          <div class="tw-rounded-card tw-overflow-hidden tw-h-[162px]">
+            <img src="./src/assets/images/about-collab.png" alt="Team collaboration"
+              class="tw-w-full tw-h-full tw-object-cover" />
+          </div>
+        </div>
+
+        <!-- Col 3 · Tall image card with overlaid CTA -->
+        <div class="tw-relative tw-rounded-card tw-overflow-hidden">
+          <img src="./src/assets/images/about-visual.png" alt="Developers collaborating"
+            class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover" />
+          <div class="tw-absolute tw-inset-0 tw-bg-[#0d1642]/30"></div>
+          <a href="#"
+            class="tw-group tw-whitespace-nowrap tw-absolute tw-left-1/2 tw-top-1/2 -tw-translate-y-1/2 -tw-translate-x-1/2 tw-inline-flex tw-items-center tw-gap-3 tw-bg-white hover:tw-bg-white/95 tw-text-ink tw-font-dm tw-font-semibold tw-text-2xl tw-rounded-pill tw-px-6 tw-py-[14px] tw-shadow-[0_10px_24px_rgba(0,0,0,0.18)] hover:-tw-translate-y-0.5 hover:tw-shadow-[0_14px_32px_rgba(0,0,0,0.22)] tw-transition-all tw-duration-300 tw-ease-out">
+            Read More
+            <i
+              class="fa-sharp-duotone fa-light fa-arrow-right-long tw-text-2xl tw-transition-transform tw-duration-300 tw-ease-out group-hover:tw-translate-x-1"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== WE ARE DIFFERENT ============== -->
+  <section class="tw-py-20 lg:tw-py-24 tw-bg-surface-muted">
+    <div class="tw-container">
+      <h2
+        class="tw-font-display tw-font-semibold tw-text-[40px] md:tw-text-[54px] lg:tw-text-d-lg tw-tracking-tight tw-text-ink tw-text-center tw-max-w-[1100px] tw-mx-auto tw-mb-14">
+        We are Different Because
+      </h2>
+
+      <div class="tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 xl:tw-grid-cols-4 tw-gap-6">
+        <article
+          class="tw-bg-white tw-rounded-card tw-p-8 tw-border tw-border-black/5 tw-shadow-soft tw-transition tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
+          <div class="tw-w-full tw-aspect-[4/3] tw-rounded-2xl tw-overflow-hidden tw-mb-5">
+            <img src="./src/assets/images/different-card-1.png" alt="" class="tw-w-full tw-h-full tw-object-cover" />
+          </div>
+          <h3 class="tw-text-[22px] tw-font-semibold tw-text-ink tw-mb-2.5 tw-tracking-tight">
+            Dedicated Engineering Lead
+          </h3>
+          <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55]">
+            Direct access to a senior engineer leading delivery—no layers of
+            account management between you and the team.
+          </p>
+        </article>
+
+        <article
+          class="tw-bg-white tw-rounded-card tw-p-8 tw-border tw-border-black/5 tw-shadow-soft tw-transition tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
+          <div class="tw-w-full tw-aspect-[4/3] tw-rounded-2xl tw-overflow-hidden tw-mb-5">
+            <img src="./src/assets/images/different-card-2.png" alt="" class="tw-w-full tw-h-full tw-object-cover" />
+          </div>
+          <h3 class="tw-text-[22px] tw-font-semibold tw-text-ink tw-mb-2.5 tw-tracking-tight">
+            Senior, Scalability-Experienced Team
+          </h3>
+          <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55]">
+            We staff experienced engineers who've built and operated systems
+            for growth, performance, and reliability.
+          </p>
+        </article>
+
+        <article
+          class="tw-bg-white tw-rounded-card tw-p-8 tw-border tw-border-black/5 tw-shadow-soft tw-transition tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
+          <div class="tw-w-full tw-aspect-[4/3] tw-rounded-2xl tw-overflow-hidden tw-mb-5">
+            <img src="./src/assets/images/different-card-3.png" alt="" class="tw-w-full tw-h-full tw-object-cover" />
+          </div>
+          <h3 class="tw-text-[22px] tw-font-semibold tw-text-ink tw-mb-2.5 tw-tracking-tight">
+            Maintainable, Long-Term Codebase
+          </h3>
+          <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55]">
+            We focus on clean architecture, consistent standards, and
+            documentation so the system stays easy to extend.
+          </p>
+        </article>
+
+        <article
+          class="tw-bg-white tw-rounded-card tw-p-8 tw-border tw-border-black/5 tw-shadow-soft tw-transition tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
+          <div class="tw-w-full tw-aspect-[4/3] tw-rounded-2xl tw-overflow-hidden tw-mb-5">
+            <img src="./src/assets/images/different-card-4.png" alt="" class="tw-w-full tw-h-full tw-object-cover" />
+          </div>
+          <h3 class="tw-text-[22px] tw-font-semibold tw-text-ink tw-mb-2.5 tw-tracking-tight">
+            Transparent Delivery
+          </h3>
+          <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55]">
+            Track progress in real time through the TrueTimer portal, with
+            clear visibility into what's in progress, shipped, and next.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== DARK CTA BAND ============== -->
+  <section class="tw-bg-surface-dark tw-text-white tw-py-12">
+    <div class="tw-container tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-gap-8">
+      <h3
+        class="tw-font-display tw-font-semibold tw-text-[32px] md:tw-text-h-lg tw-leading-[1.15] tw-tracking-tight tw-max-w-[700px]">
+        Ready to innovate<br />and drive an impact?
+      </h3>
+      <a href="#"
+        class="tw-inline-flex tw-items-center tw-gap-3 tw-bg-brand-green hover:tw-bg-brand-green-hover tw-text-white tw-font-dm tw-font-semibold tw-text-[18px] tw-rounded-pill tw-px-7 tw-py-[18px] tw-transition-colors">
+        Speak With Us
+        <span
+          class="tw-inline-flex tw-h-7 tw-w-7 tw-items-center tw-justify-center tw-rounded-full tw-bg-white tw-text-brand-green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3.5 tw-w-3.5">
+            <path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============== SERVICES ============== -->
+  <section class="tw-py-20 lg:tw-py-24 tw-bg-white">
+    <div class="tw-container">
+      <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-6 tw-items-end tw-mb-14">
+        <h2 class="tw-font-display tw-font-semibold tw-text-h-xl tw-tracking-tight tw-text-ink tw-leading-[1.15]">
+          Our Custom Software Development Services
+        </h2>
+        <p class="tw-text-[18px] tw-text-ink-300 tw-leading-[1.55] tw-max-w-[600px]">
+          A comprehensive suite of software development services designed to
+          address evolving client requirements and guide SMBs, startups, or
+          enterprises in their digital transformation journey.
+        </p>
+      </div>
+
+      <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 xl:tw-grid-cols-3 tw-gap-6">
+        <article
+          class="tw-group tw-bg-white tw-border tw-border-black/5 hover:tw-border-brand-blue tw-rounded-card tw-p-9 tw-flex tw-flex-col tw-gap-4 tw-transition-all tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
+          <div class="tw-font-display tw-font-semibold tw-text-[18px] tw-text-ink-200 tw-tracking-widest">
+            01
+          </div>
+          <h3 class="tw-text-[24px] tw-font-semibold tw-text-ink tw-tracking-tight">
+            Mobile Application Development
+          </h3>
+          <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55] tw-flex-1">
+            User-centric, AI-enabled apps that maximize engagement and create
+            brand value by winning customers and driving sales.
+          </p>
+          <a href="#"
+            class="tw-inline-flex tw-items-center tw-gap-2 tw-text-brand-green tw-font-dm tw-font-semibold tw-text-[15px]">
+            Explore More
+            <span
+              class="tw-inline-flex tw-h-[22px] tw-w-[22px] tw-items-center tw-justify-center tw-rounded-full tw-bg-brand-green tw-text-white tw-transition-transform group-hover:tw-translate-x-0.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3 tw-w-3">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
+        </article>
+
+        <article
+          class="tw-group tw-bg-white tw-border tw-border-black/5 hover:tw-border-brand-blue tw-rounded-card tw-p-9 tw-flex tw-flex-col tw-gap-4 tw-transition-all tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
+          <div class="tw-font-display tw-font-semibold tw-text-[18px] tw-text-ink-200 tw-tracking-widest">
+            02
+          </div>
+          <h3 class="tw-text-[24px] tw-font-semibold tw-text-ink tw-tracking-tight">
+            Enterprise Applications Development
+          </h3>
+          <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55] tw-flex-1">
+            Streamline your operations and enable cooperative workflows
+            without reinventing the wheel with cost and time savings.
+          </p>
+          <a href="#"
+            class="tw-inline-flex tw-items-center tw-gap-2 tw-text-brand-green tw-font-dm tw-font-semibold tw-text-[15px]">
+            Explore More
+            <span
+              class="tw-inline-flex tw-h-[22px] tw-w-[22px] tw-items-center tw-justify-center tw-rounded-full tw-bg-brand-green tw-text-white tw-transition-transform group-hover:tw-translate-x-0.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3 tw-w-3">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
+        </article>
+
+        <article
+          class="tw-group tw-bg-white tw-border tw-border-black/5 hover:tw-border-brand-blue tw-rounded-card tw-p-9 tw-flex tw-flex-col tw-gap-4 tw-transition-all tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
+          <div class="tw-font-display tw-font-semibold tw-text-[18px] tw-text-ink-200 tw-tracking-widest">
+            03
+          </div>
+          <h3 class="tw-text-[24px] tw-font-semibold tw-text-ink tw-tracking-tight">
+            Cloud Solution
+          </h3>
+          <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55] tw-flex-1">
+            Achieve scalability, security, and agility with end-to-end cloud
+            solutions while reducing cloud TCO for efficient team delivery.
+          </p>
+          <a href="#"
+            class="tw-inline-flex tw-items-center tw-gap-2 tw-text-brand-green tw-font-dm tw-font-semibold tw-text-[15px]">
+            Explore More
+            <span
+              class="tw-inline-flex tw-h-[22px] tw-w-[22px] tw-items-center tw-justify-center tw-rounded-full tw-bg-brand-green tw-text-white tw-transition-transform group-hover:tw-translate-x-0.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3 tw-w-3">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
+        </article>
+
+        <article
+          class="tw-group tw-bg-white tw-border tw-border-black/5 hover:tw-border-brand-blue tw-rounded-card tw-p-9 tw-flex tw-flex-col tw-gap-4 tw-transition-all tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
+          <div class="tw-font-display tw-font-semibold tw-text-[18px] tw-text-ink-200 tw-tracking-widest">
+            04
+          </div>
+          <h3 class="tw-text-[24px] tw-font-semibold tw-text-ink tw-tracking-tight">
+            Custom Software Development
+          </h3>
+          <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55] tw-flex-1">
+            Custom software solutions for resolving operational bottlenecks or
+            IT infrastructure modernization for the business edge.
+          </p>
+          <a href="#"
+            class="tw-inline-flex tw-items-center tw-gap-2 tw-text-brand-green tw-font-dm tw-font-semibold tw-text-[15px]">
+            Explore More
+            <span
+              class="tw-inline-flex tw-h-[22px] tw-w-[22px] tw-items-center tw-justify-center tw-rounded-full tw-bg-brand-green tw-text-white tw-transition-transform group-hover:tw-translate-x-0.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3 tw-w-3">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
+        </article>
+
+        <article
+          class="tw-group tw-bg-white tw-border tw-border-black/5 hover:tw-border-brand-blue tw-rounded-card tw-p-9 tw-flex tw-flex-col tw-gap-4 tw-transition-all tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
+          <div class="tw-font-display tw-font-semibold tw-text-[18px] tw-text-ink-200 tw-tracking-widest">
+            05
+          </div>
+          <h3 class="tw-text-[24px] tw-font-semibold tw-text-ink tw-tracking-tight">
+            Data and Artificial Intelligence (AI)
+          </h3>
+          <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55] tw-flex-1">
+            Our team leverages NLP, BI, and complex data analytics to suggest
+            the best engagement model to help you achieve data-first
+            modernization.
+          </p>
+          <a href="#"
+            class="tw-inline-flex tw-items-center tw-gap-2 tw-text-brand-green tw-font-dm tw-font-semibold tw-text-[15px]">
+            Explore More
+            <span
+              class="tw-inline-flex tw-h-[22px] tw-w-[22px] tw-items-center tw-justify-center tw-rounded-full tw-bg-brand-green tw-text-white tw-transition-transform group-hover:tw-translate-x-0.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3 tw-w-3">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
+        </article>
+
+        <article
+          class="tw-group tw-bg-white tw-border tw-border-black/5 hover:tw-border-brand-blue tw-rounded-card tw-p-9 tw-flex tw-flex-col tw-gap-4 tw-transition-all tw-duration-300 hover:-tw-translate-y-1 hover:tw-shadow-lift">
+          <div class="tw-font-display tw-font-semibold tw-text-[18px] tw-text-ink-200 tw-tracking-widest">
+            06
+          </div>
+          <h3 class="tw-text-[24px] tw-font-semibold tw-text-ink tw-tracking-tight">
+            DevOps Consulting Services
+          </h3>
+          <p class="tw-text-[16px] tw-text-ink-300 tw-leading-[1.55] tw-flex-1">
+            Reduce time-to-market and costs by building, testing, and
+            releasing high-quality software quickly and reliably.
+          </p>
+          <a href="#"
+            class="tw-inline-flex tw-items-center tw-gap-2 tw-text-brand-green tw-font-dm tw-font-semibold tw-text-[15px]">
+            Explore More
+            <span
+              class="tw-inline-flex tw-h-[22px] tw-w-[22px] tw-items-center tw-justify-center tw-rounded-full tw-bg-brand-green tw-text-white tw-transition-transform group-hover:tw-translate-x-0.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3 tw-w-3">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
+        </article>
+      </div>
+
+      <div class="tw-text-center tw-mt-12">
+        <a href="#"
+          class="tw-inline-flex tw-items-center tw-gap-3 tw-bg-brand-green hover:tw-bg-brand-green-hover tw-text-white tw-font-dm tw-font-semibold tw-text-[18px] tw-rounded-pill tw-px-7 tw-py-[16px] tw-transition-colors">
+          Load More
+          <span
+            class="tw-inline-flex tw-h-7 tw-w-7 tw-items-center tw-justify-center tw-rounded-full tw-bg-white tw-text-brand-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3.5 tw-w-3.5">
+              <path d="M12 5v14M5 12l7 7 7-7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== HELP YOUR BUSINESS GROW ============== -->
+  <section class="tw-py-20 lg:tw-py-24 tw-bg-surface-muted">
+    <div class="tw-container">
+      <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-12 tw-items-center">
+        <div>
+          <h2
+            class="tw-font-display tw-font-semibold tw-text-h-xl tw-tracking-tight tw-text-ink tw-leading-[1.15] tw-mb-5">
+            We're here to help your business grow.
+          </h2>
+          <p class="tw-text-[18px] tw-text-ink-300 tw-leading-[1.55] tw-max-w-[520px] tw-mb-6">
+            As a custom software development company, our delivery lays
+            emphasis on superior customer experience through AI-driven legacy
+            modernization, intelligent automation, and predictive analysis.
+          </p>
+          <div class="tw-relative tw-aspect-[4/3] tw-rounded-card tw-overflow-hidden">
+            <img src="./src/assets/images/help-business-visual.png" alt="Business growth"
+              class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover" />
+          </div>
+        </div>
+
+        <div class="tw-bg-surface-dark tw-text-white tw-rounded-card tw-p-9 tw-grid tw-gap-4">
+          <div class="tw-flex tw-gap-3 tw-items-start tw-text-[17px]">
+            <img src="./src/assets/images/icon-check.svg" alt=""
+              class="tw-flex-none tw-h-6 tw-w-6 tw-mt-0.5 tw-brightness-0 tw-invert" />
+            Enterprise-Grade Solutions with AI &amp; Automation
+          </div>
+          <div class="tw-flex tw-gap-3 tw-items-start tw-text-[17px]">
+            <img src="./src/assets/images/icon-check.svg" alt=""
+              class="tw-flex-none tw-h-6 tw-w-6 tw-mt-0.5 tw-brightness-0 tw-invert" />
+            Scalable, Future-Ready Software Development
+          </div>
+          <div class="tw-flex tw-gap-3 tw-items-start tw-text-[17px]">
+            <img src="./src/assets/images/icon-check.svg" alt=""
+              class="tw-flex-none tw-h-6 tw-w-6 tw-mt-0.5 tw-brightness-0 tw-invert" />
+            Expertise Across Industries with Full-Cycle Support
+          </div>
+          <div class="tw-flex tw-gap-3 tw-items-start tw-text-[17px]">
+            <img src="./src/assets/images/icon-check.svg" alt=""
+              class="tw-flex-none tw-h-6 tw-w-6 tw-mt-0.5 tw-brightness-0 tw-invert" />
+            Market Understanding &amp; Compliance Expertise
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SUCCESS STORY ============== -->
+  <section class="tw-py-20 lg:tw-py-24 tw-bg-white">
+    <div class="tw-container">
+      <h2 class="tw-font-display tw-font-semibold tw-text-h-xl tw-tracking-tight tw-text-ink tw-mb-12">
+        Success Stories
+      </h2>
+
+      <div
+        class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-12 tw-items-center tw-bg-surface-muted tw-rounded-card tw-p-8 md:tw-p-10">
+        <div class="tw-relative tw-aspect-[4/3] tw-rounded-2xl tw-overflow-hidden">
+          <img src="./src/assets/images/success-entripy.png" alt="Entripy case study"
+            class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover" />
+        </div>
+
+        <div>
+          <div class="tw-font-display tw-font-bold tw-text-h-lg tw-text-brand-blue-dark tw-tracking-tight tw-mb-4">
+            Entripy
+          </div>
+          <p class="tw-text-[17px] tw-text-ink-300 tw-leading-[1.55] tw-mb-6">
+            Entripy is an e-commerce platform developed for a Canada-based
+            client, specializing in custom-printed apparel, promotional items,
+            and uniforms. An advanced web-based solution streamlined garment
+            customization, minimized post-purchase dissatisfaction, and
+            enabled more users to easily order printed marketing materials
+            directly through the website.
+          </p>
+
+          <div class="tw-grid tw-grid-cols-2 tw-gap-6 tw-mb-7">
+            <div>
+              <div class="tw-text-[56px] tw-font-bold tw-text-brand-green tw-tracking-tight tw-leading-none">
+                28%
+              </div>
+              <div class="tw-text-[15px] tw-text-ink-300 tw-mt-2">
+                Rise in Happy Customers
+              </div>
+            </div>
+            <div>
+              <div class="tw-text-[56px] tw-font-bold tw-text-brand-green tw-tracking-tight tw-leading-none">
+                36%
+              </div>
+              <div class="tw-text-[15px] tw-text-ink-300 tw-mt-2">
+                Increase in User Engagement
+              </div>
+            </div>
+          </div>
+
+          <ul class="tw-list-none tw-p-0 tw-m-0 tw-grid tw-gap-2.5 tw-mb-7">
+            <li class="tw-flex tw-gap-2.5 tw-text-ink-700 tw-text-[15px]">
+              <img src="./src/assets/images/icon-check.svg" alt="" class="tw-flex-none tw-h-5 tw-w-5 tw-mt-0.5" />
+              Boosted custom order conversions significantly
+            </li>
+            <li class="tw-flex tw-gap-2.5 tw-text-ink-700 tw-text-[15px]">
+              <img src="./src/assets/images/icon-check.svg" alt="" class="tw-flex-none tw-h-5 tw-w-5 tw-mt-0.5" />
+              Streamlined operations for higher efficiency
+            </li>
+            <li class="tw-flex tw-gap-2.5 tw-text-ink-700 tw-text-[15px]">
+              <img src="./src/assets/images/icon-check.svg" alt="" class="tw-flex-none tw-h-5 tw-w-5 tw-mt-0.5" />
+              Minimized order revisions and product returns
+            </li>
+            <li class="tw-flex tw-gap-2.5 tw-text-ink-700 tw-text-[15px]">
+              <img src="./src/assets/images/icon-check.svg" alt="" class="tw-flex-none tw-h-5 tw-w-5 tw-mt-0.5" />
+              Enhanced user engagement with interactive design
+            </li>
+          </ul>
+
+          <a href="#"
+            class="tw-inline-flex tw-items-center tw-gap-3 tw-bg-brand-blue hover:tw-bg-brand-blue-dark tw-text-white tw-font-dm tw-font-semibold tw-text-[16px] tw-rounded-pill tw-px-6 tw-py-[14px] tw-transition-colors">
+            Read Full Case Study
+            <span
+              class="tw-inline-flex tw-h-6 tw-w-6 tw-items-center tw-justify-center tw-rounded-full tw-bg-white tw-text-brand-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3 tw-w-3">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </span>
           </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ============== HELP YOUR BUSINESS GROW ============== -->
-    <section class="tw-py-20 lg:tw-py-24 tw-bg-surface-muted">
-      <div class="tw-max-w-container tw-mx-auto tw-px-5">
-        <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-12 tw-items-center">
-          <div>
-            <h2 class="tw-font-display tw-font-semibold tw-text-h-xl tw-tracking-tight tw-text-ink tw-leading-[1.15] tw-mb-5">We're here to help your business grow.</h2>
-            <p class="tw-text-[18px] tw-text-ink-300 tw-leading-[1.55] tw-max-w-[520px] tw-mb-6">
-              As a custom software development company, our delivery lays emphasis on superior customer experience through AI-driven legacy modernization, intelligent automation, and predictive analysis.
-            </p>
-            <div class="tw-relative tw-aspect-[4/3] tw-rounded-card tw-overflow-hidden">
-              <img src="/figma/Image2.png" alt="Business growth" class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover" />
-            </div>
-          </div>
-
-          <div class="tw-bg-surface-dark tw-text-white tw-rounded-card tw-p-9 tw-grid tw-gap-4">
-            <div class="tw-flex tw-gap-3 tw-items-start tw-text-[17px]">
-              <img src="/figma/WeuiDone2Filled.svg" alt="" class="tw-flex-none tw-h-6 tw-w-6 tw-mt-0.5 tw-brightness-0 tw-invert" />
-              Enterprise-Grade Solutions with AI &amp; Automation
-            </div>
-            <div class="tw-flex tw-gap-3 tw-items-start tw-text-[17px]">
-              <img src="/figma/WeuiDone2Filled.svg" alt="" class="tw-flex-none tw-h-6 tw-w-6 tw-mt-0.5 tw-brightness-0 tw-invert" />
-              Scalable, Future-Ready Software Development
-            </div>
-            <div class="tw-flex tw-gap-3 tw-items-start tw-text-[17px]">
-              <img src="/figma/WeuiDone2Filled.svg" alt="" class="tw-flex-none tw-h-6 tw-w-6 tw-mt-0.5 tw-brightness-0 tw-invert" />
-              Expertise Across Industries with Full-Cycle Support
-            </div>
-            <div class="tw-flex tw-gap-3 tw-items-start tw-text-[17px]">
-              <img src="/figma/WeuiDone2Filled.svg" alt="" class="tw-flex-none tw-h-6 tw-w-6 tw-mt-0.5 tw-brightness-0 tw-invert" />
-              Market Understanding &amp; Compliance Expertise
-            </div>
-          </div>
-        </div>
+  <!-- ============== INDUSTRIES ============== -->
+  <section class="tw-py-20 lg:tw-py-24 tw-bg-surface-muted">
+    <div class="tw-container">
+      <div class="tw-text-center tw-mb-14">
+        <h2
+          class="tw-font-display tw-font-semibold tw-text-h-xl tw-tracking-tight tw-text-ink tw-max-w-[900px] tw-mx-auto tw-mb-4">
+          Industries differ, and so do our custom software solutions.
+        </h2>
+        <p class="tw-text-[18px] tw-text-ink-300 tw-max-w-[1000px] tw-mx-auto tw-leading-[1.55]">
+          If it's about real business results and keeping ahead, choose a
+          software development company that knows industry dynamics
+          well—Leverage Proquantic's first-hand experience in delivering lean,
+          digital-first solutions across industries.
+        </p>
       </div>
-    </section>
 
-    <!-- ============== SUCCESS STORY ============== -->
-    <section class="tw-py-20 lg:tw-py-24 tw-bg-white">
-      <div class="tw-max-w-container tw-mx-auto tw-px-5">
-        <h2 class="tw-font-display tw-font-semibold tw-text-h-xl tw-tracking-tight tw-text-ink tw-mb-12">Success Stories</h2>
-
-        <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-12 tw-items-center tw-bg-surface-muted tw-rounded-card tw-p-8 md:tw-p-10">
-          <div class="tw-relative tw-aspect-[4/3] tw-rounded-2xl tw-overflow-hidden">
-            <img src="/figma/Image54.png" alt="Entripy case study" class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover" />
+      <div class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4 tw-gap-5">
+        <article
+          class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
+          <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center">
+            <img src="./src/assets/images/icon-logistics.svg" alt="" class="tw-h-7 tw-w-7" />
           </div>
-
-          <div>
-            <div class="tw-font-display tw-font-bold tw-text-h-lg tw-text-brand-blue-dark tw-tracking-tight tw-mb-4">Entripy</div>
-            <p class="tw-text-[17px] tw-text-ink-300 tw-leading-[1.55] tw-mb-6">
-              Entripy is an e-commerce platform developed for a Canada-based client, specializing in custom-printed apparel, promotional items, and uniforms. An advanced web-based solution streamlined garment customization, minimized post-purchase dissatisfaction, and enabled more users to easily order printed marketing materials directly through the website.
-            </p>
-
-            <div class="tw-grid tw-grid-cols-2 tw-gap-6 tw-mb-7">
-              <div>
-                <div class="tw-text-[56px] tw-font-bold tw-text-brand-green tw-tracking-tight tw-leading-none">28%</div>
-                <div class="tw-text-[15px] tw-text-ink-300 tw-mt-2">Rise in Happy Customers</div>
-              </div>
-              <div>
-                <div class="tw-text-[56px] tw-font-bold tw-text-brand-green tw-tracking-tight tw-leading-none">36%</div>
-                <div class="tw-text-[15px] tw-text-ink-300 tw-mt-2">Increase in User Engagement</div>
-              </div>
-            </div>
-
-            <ul class="tw-list-none tw-p-0 tw-m-0 tw-grid tw-gap-2.5 tw-mb-7">
-              <li class="tw-flex tw-gap-2.5 tw-text-ink-700 tw-text-[15px]">
-                <img src="/figma/WeuiDone2Filled.svg" alt="" class="tw-flex-none tw-h-5 tw-w-5 tw-mt-0.5" />
-                Boosted custom order conversions significantly
-              </li>
-              <li class="tw-flex tw-gap-2.5 tw-text-ink-700 tw-text-[15px]">
-                <img src="/figma/WeuiDone2Filled.svg" alt="" class="tw-flex-none tw-h-5 tw-w-5 tw-mt-0.5" />
-                Streamlined operations for higher efficiency
-              </li>
-              <li class="tw-flex tw-gap-2.5 tw-text-ink-700 tw-text-[15px]">
-                <img src="/figma/WeuiDone2Filled.svg" alt="" class="tw-flex-none tw-h-5 tw-w-5 tw-mt-0.5" />
-                Minimized order revisions and product returns
-              </li>
-              <li class="tw-flex tw-gap-2.5 tw-text-ink-700 tw-text-[15px]">
-                <img src="/figma/WeuiDone2Filled.svg" alt="" class="tw-flex-none tw-h-5 tw-w-5 tw-mt-0.5" />
-                Enhanced user engagement with interactive design
-              </li>
-            </ul>
-
-            <a href="#" class="tw-inline-flex tw-items-center tw-gap-3 tw-bg-brand-blue hover:tw-bg-brand-blue-dark tw-text-white tw-font-dm tw-font-semibold tw-text-[16px] tw-rounded-pill tw-px-6 tw-py-[14px] tw-transition-colors">
-              Read Full Case Study
-              <span class="tw-inline-flex tw-h-6 tw-w-6 tw-items-center tw-justify-center tw-rounded-full tw-bg-white tw-text-brand-blue">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3 tw-w-3"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </a>
+          <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">
+            Logistics &amp; Transportation
           </div>
-        </div>
+        </article>
+        <article
+          class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
+          <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center">
+            <img src="./src/assets/images/icon-ecommerce.svg" alt="" class="tw-h-7 tw-w-7" />
+          </div>
+          <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">
+            E-Commerce &amp; Retail
+          </div>
+        </article>
+        <article
+          class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
+          <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center">
+            <img src="./src/assets/images/icon-real-estate.svg" alt="" class="tw-h-7 tw-w-7" />
+          </div>
+          <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">
+            Real Estate &amp; PropTech
+          </div>
+        </article>
+        <article
+          class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
+          <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center">
+            <img src="./src/assets/images/icon-manufacturing.svg" alt="" class="tw-h-7 tw-w-7" />
+          </div>
+          <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">
+            Manufacturing &amp; Industrial
+          </div>
+        </article>
+        <article
+          class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
+          <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center">
+            <img src="./src/assets/images/icon-hospitality.svg" alt="" class="tw-h-7 tw-w-7" />
+          </div>
+          <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">
+            Hospitality &amp; Travel
+          </div>
+        </article>
+        <article
+          class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
+          <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center">
+            <img src="./src/assets/images/icon-healthcare.svg" alt="" class="tw-h-7 tw-w-7" />
+          </div>
+          <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">
+            Healthcare &amp; MedTech
+          </div>
+        </article>
+        <article
+          class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
+          <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center">
+            <img src="./src/assets/images/icon-education.svg" alt="" class="tw-h-7 tw-w-7" />
+          </div>
+          <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">
+            Education &amp; EdTech
+          </div>
+        </article>
+        <article
+          class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
+          <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center">
+            <img src="./src/assets/images/icon-fintech.svg" alt="" class="tw-h-7 tw-w-7" />
+          </div>
+          <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">
+            FinTech &amp; Banking
+          </div>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ============== INDUSTRIES ============== -->
-    <section class="tw-py-20 lg:tw-py-24 tw-bg-surface-muted">
-      <div class="tw-max-w-container tw-mx-auto tw-px-5">
-        <div class="tw-text-center tw-mb-14">
-          <h2 class="tw-font-display tw-font-semibold tw-text-h-xl tw-tracking-tight tw-text-ink tw-max-w-[900px] tw-mx-auto tw-mb-4">Industries differ, and so do our custom software solutions.</h2>
-          <p class="tw-text-[18px] tw-text-ink-300 tw-max-w-[1000px] tw-mx-auto tw-leading-[1.55]">
-            If it's about real business results and keeping ahead, choose a software development company that knows industry dynamics well—Leverage Proquantic's first-hand experience in delivering lean, digital-first solutions across industries.
+  <!-- ============== ACCELERATE CTA ============== -->
+  <section class="tw-bg-accelerate tw-text-white tw-py-20 tw-relative tw-overflow-hidden">
+    <div class="tw-container">
+      <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-[1.2fr_0.8fr] tw-gap-12 tw-items-center">
+        <div>
+          <h2
+            class="tw-font-display tw-font-normal tw-text-[40px] md:tw-text-d-md tw-leading-[1.05] tw-tracking-tight tw-text-white/90 tw-mb-3">
+            Accelerate Your App Development
+          </h2>
+          <p class="tw-text-white/80 tw-text-[22px] tw-mb-9">
+            See how can we help
           </p>
+
+          <a href="#"
+            class="tw-inline-flex tw-items-center tw-gap-3 tw-bg-white tw-text-ink-900 tw-font-dm tw-font-semibold tw-text-[18px] tw-rounded-pill tw-px-7 tw-py-[18px] hover:tw-bg-white/90 tw-transition-colors">
+            Schedule a free consultation
+            <span
+              class="tw-inline-flex tw-h-7 tw-w-7 tw-items-center tw-justify-center tw-rounded-full tw-bg-brand-green tw-text-white">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3.5 tw-w-3.5">
+                <path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
         </div>
 
-        <div class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4 tw-gap-5">
-          <article class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
-            <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center"><img src="/figma/Group1.svg" alt="" class="tw-h-7 tw-w-7" /></div>
-            <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">Logistics &amp; Transportation</div>
-          </article>
-          <article class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
-            <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center"><img src="/figma/IconoirShoppingBag.svg" alt="" class="tw-h-7 tw-w-7" /></div>
-            <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">E-Commerce &amp; Retail</div>
-          </article>
-          <article class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
-            <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center"><img src="/figma/Group2.svg" alt="" class="tw-h-7 tw-w-7" /></div>
-            <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">Real Estate &amp; PropTech</div>
-          </article>
-          <article class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
-            <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center"><img src="/figma/MaterialSymbolsLightPrecisionManufacturingOutline.svg" alt="" class="tw-h-7 tw-w-7" /></div>
-            <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">Manufacturing &amp; Industrial</div>
-          </article>
-          <article class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
-            <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center"><img src="/figma/MaterialSymbolsLightModeOfTravelRounded.svg" alt="" class="tw-h-7 tw-w-7" /></div>
-            <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">Hospitality &amp; Travel</div>
-          </article>
-          <article class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
-            <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center"><img src="/figma/Group3.svg" alt="" class="tw-h-7 tw-w-7" /></div>
-            <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">Healthcare &amp; MedTech</div>
-          </article>
-          <article class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
-            <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center"><img src="/figma/QlementineIconsEducation24.svg" alt="" class="tw-h-7 tw-w-7" /></div>
-            <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">Education &amp; EdTech</div>
-          </article>
-          <article class="tw-bg-white tw-rounded-2xl tw-p-7 tw-flex tw-flex-col tw-gap-3.5 tw-min-h-[180px] tw-transition tw-duration-200 hover:-tw-translate-y-1 hover:tw-shadow-soft">
-            <div class="tw-h-12 tw-w-12 tw-rounded-2xl tw-bg-soft-tile tw-inline-flex tw-items-center tw-justify-center"><img src="/figma/MaterialSymbolsLightFinanceModeOutlineRounded.svg" alt="" class="tw-h-7 tw-w-7" /></div>
-            <div class="tw-text-[18px] tw-font-semibold tw-text-ink tw-leading-[1.3]">FinTech &amp; Banking</div>
-          </article>
+        <div class="tw-flex tw-justify-center">
+          <img src="./src/assets/images/accelerate-phone.png" alt="App preview"
+            class="tw-h-[500px] tw-w-auto tw-object-contain tw-drop-shadow-[0_30px_60px_rgba(0,0,0,0.35)]" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ============== ACCELERATE CTA ============== -->
-    <section class="tw-bg-accelerate tw-text-white tw-py-20 tw-relative tw-overflow-hidden">
-      <div class="tw-max-w-container tw-mx-auto tw-px-5">
-        <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-[1.2fr_0.8fr] tw-gap-12 tw-items-center">
-          <div>
-            <h2 class="tw-font-display tw-font-normal tw-text-[40px] md:tw-text-d-md tw-leading-[1.05] tw-tracking-tight tw-text-white/90 tw-mb-3">
-              Accelerate Your App Development
-            </h2>
-            <p class="tw-text-white/80 tw-text-[22px] tw-mb-9">See how can we help</p>
+  <!-- ============== FOOTER ============== -->
+  <footer class="tw-bg-surface-dark tw-text-white/80 tw-pt-16">
+    <div class="tw-container">
+      <div class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 xl:tw-grid-cols-5 tw-gap-9 md:tw-gap-6">
+        <div>
+          <h4 class="tw-font-dm tw-text-[16px] tw-font-semibold tw-text-white tw-mb-4">
+            Services
+          </h4>
+          <ul class="tw-list-none tw-p-0 tw-m-0 tw-grid tw-gap-2.5 tw-text-[15px]">
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">App Development</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Cloud Solutions</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Blockchain</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Data &amp; AI Software
+                Development</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Enterprise Applications</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Software Development</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">DevOps Consulting</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Staff Augmentation</a>
+            </li>
+          </ul>
+        </div>
 
-            <a href="#" class="tw-inline-flex tw-items-center tw-gap-3 tw-bg-white tw-text-ink-900 tw-font-dm tw-font-semibold tw-text-[18px] tw-rounded-pill tw-px-7 tw-py-[18px] hover:tw-bg-white/90 tw-transition-colors">
-              Schedule a free consultation
-              <span class="tw-inline-flex tw-h-7 tw-w-7 tw-items-center tw-justify-center tw-rounded-full tw-bg-brand-green tw-text-white">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tw-h-3.5 tw-w-3.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </a>
+        <div>
+          <h4 class="tw-font-dm tw-text-[16px] tw-font-semibold tw-text-white tw-mb-4">
+            Industries
+          </h4>
+          <ul class="tw-list-none tw-p-0 tw-m-0 tw-grid tw-gap-2.5 tw-text-[15px]">
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Education &amp; EdTech</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">FinTech &amp; Banking</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Real Estate &amp;
+                PropTech</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Hospitality and Travel</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Food and Restaurant</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">E-Commerce &amp; Retail</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Healthcare &amp; MedTech</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Logistics &amp;
+                Transportation</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Manufacturing &amp;
+                Industrial</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="tw-font-dm tw-text-[16px] tw-font-semibold tw-text-white tw-mb-4">
+            Explore
+          </h4>
+          <ul class="tw-list-none tw-p-0 tw-m-0 tw-grid tw-gap-2.5 tw-text-[15px]">
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">About us</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Core values</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Case studies</a>
+            </li>
+            <li>
+              <a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tw-col-span-2">
+          <h4 class="tw-font-dm tw-text-[16px] tw-font-semibold tw-text-white tw-mb-4">
+            Offices
+          </h4>
+          <div class="tw-flex tw-items-start tw-gap-2 tw-mb-3 tw-text-[15px] tw-text-white/80">
+            🇺🇸 (+1) 929 9303029
           </div>
-
-          <div class="tw-flex tw-justify-center">
-            <img src="/figma/Image3.png" alt="App preview" class="tw-h-[500px] tw-w-auto tw-object-contain tw-drop-shadow-[0_30px_60px_rgba(0,0,0,0.35)]" />
+          <div class="tw-flex tw-items-start tw-gap-2 tw-mb-3 tw-text-[15px] tw-text-white/80">
+            🇬🇧 (+44) 20 37693095
           </div>
+          <div class="tw-flex tw-items-start tw-gap-2 tw-mb-5 tw-text-[15px] tw-text-white/80">
+            🇦🇪 (+971) 5569 23745
+          </div>
+          <h4 class="tw-font-dm tw-text-[16px] tw-font-semibold tw-text-white tw-mb-2">
+            Mail
+          </h4>
+          <a href="mailto:sales@proquantic.com"
+            class="tw-text-white/80 hover:tw-text-white tw-transition-colors tw-text-[15px]">sales@proquantic.com</a>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- ============== FOOTER ============== -->
-    <footer class="tw-bg-surface-dark tw-text-white/80 tw-pt-16">
-      <div class="tw-max-w-container tw-mx-auto tw-px-5">
-        <div class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 xl:tw-grid-cols-5 tw-gap-9 md:tw-gap-6">
-          <div>
-            <h4 class="tw-font-dm tw-text-[16px] tw-font-semibold tw-text-white tw-mb-4">Services</h4>
-            <ul class="tw-list-none tw-p-0 tw-m-0 tw-grid tw-gap-2.5 tw-text-[15px]">
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">App Development</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Cloud Solutions</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Blockchain</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Data &amp; AI Software Development</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Enterprise Applications</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Software Development</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">DevOps Consulting</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Staff Augmentation</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 class="tw-font-dm tw-text-[16px] tw-font-semibold tw-text-white tw-mb-4">Industries</h4>
-            <ul class="tw-list-none tw-p-0 tw-m-0 tw-grid tw-gap-2.5 tw-text-[15px]">
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Education &amp; EdTech</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">FinTech &amp; Banking</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Real Estate &amp; PropTech</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Hospitality and Travel</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Food and Restaurant</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">E-Commerce &amp; Retail</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Healthcare &amp; MedTech</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Logistics &amp; Transportation</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Manufacturing &amp; Industrial</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 class="tw-font-dm tw-text-[16px] tw-font-semibold tw-text-white tw-mb-4">Explore</h4>
-            <ul class="tw-list-none tw-p-0 tw-m-0 tw-grid tw-gap-2.5 tw-text-[15px]">
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">About us</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Contact Us</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Core values</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Case studies</a></li>
-              <li><a href="#" class="tw-text-white/70 hover:tw-text-white tw-transition-colors">Blog</a></li>
-            </ul>
-          </div>
-
-          <div class="tw-col-span-2">
-            <h4 class="tw-font-dm tw-text-[16px] tw-font-semibold tw-text-white tw-mb-4">Offices</h4>
-            <div class="tw-flex tw-items-start tw-gap-2 tw-mb-3 tw-text-[15px] tw-text-white/80">🇺🇸 (+1) 929 9303029</div>
-            <div class="tw-flex tw-items-start tw-gap-2 tw-mb-3 tw-text-[15px] tw-text-white/80">🇬🇧 (+44) 20 37693095</div>
-            <div class="tw-flex tw-items-start tw-gap-2 tw-mb-5 tw-text-[15px] tw-text-white/80">🇦🇪 (+971) 5569 23745</div>
-            <h4 class="tw-font-dm tw-text-[16px] tw-font-semibold tw-text-white tw-mb-2">Mail</h4>
-            <a href="mailto:sales@proquantic.com" class="tw-text-white/80 hover:tw-text-white tw-transition-colors tw-text-[15px]">sales@proquantic.com</a>
-          </div>
+    <div class="tw-mt-14 tw-bg-surface-muted tw-text-ink-50 tw-py-6">
+      <div class="tw-container tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-gap-4 tw-text-[15px]">
+        <div>Copyright © 2026 BCS | All Rights Reserved</div>
+        <div class="tw-flex tw-items-center tw-gap-3">
+          <span>Follow Us on</span>
+          <a href="#" aria-label="LinkedIn"
+            class="tw-inline-flex tw-h-9 tw-w-9 tw-items-center tw-justify-center tw-rounded-full tw-border tw-border-ink-50 hover:tw-bg-ink-50 tw-transition">
+            <img src="./src/assets/images/icon-linkedin.svg" alt="LinkedIn" class="tw-h-4 tw-w-4" />
+          </a>
+          <a href="#" aria-label="Facebook"
+            class="tw-inline-flex tw-h-9 tw-w-9 tw-items-center tw-justify-center tw-rounded-full tw-border tw-border-ink-50 hover:tw-bg-ink-50 tw-transition">
+            <img src="./src/assets/images/icon-facebook.svg" alt="Facebook" class="tw-h-4 tw-w-4" />
+          </a>
         </div>
       </div>
+    </div>
+  </footer>
 
-      <div class="tw-mt-14 tw-bg-surface-muted tw-text-ink-50 tw-py-6">
-        <div class="tw-max-w-container tw-mx-auto tw-px-5 tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-gap-4 tw-text-[15px]">
-          <div>Copyright © 2026 BCS | All Rights Reserved</div>
-          <div class="tw-flex tw-items-center tw-gap-3">
-            <span>Follow Us on</span>
-            <a href="#" aria-label="LinkedIn" class="tw-inline-flex tw-h-9 tw-w-9 tw-items-center tw-justify-center tw-rounded-full tw-border tw-border-ink-50 hover:tw-bg-ink-50 tw-transition">
-              <img src="/figma/MdiLinkedin.svg" alt="LinkedIn" class="tw-h-4 tw-w-4" />
-            </a>
-            <a href="#" aria-label="Facebook" class="tw-inline-flex tw-h-9 tw-w-9 tw-items-center tw-justify-center tw-rounded-full tw-border tw-border-ink-50 hover:tw-bg-ink-50 tw-transition">
-              <img src="/figma/IcOutlineFacebook.svg" alt="Facebook" class="tw-h-4 tw-w-4" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
+  <script type="module" src="/src/js/main.js"></script>
+</body>
 
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
 </html>

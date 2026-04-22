@@ -39,6 +39,7 @@ body {
   font-family: 'SF Pro Display', 'SF Pro', Inter, system-ui, sans-serif;
   color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
+  background-color: red !important;
 }
 
 /* Slick carousel tweaks — can't be done with utilities */
