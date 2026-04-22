@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'slick-carousel/slick/slick.scss';
+@import 'slick-carousel/slick/slick-theme.scss';
+
+/* ============================================================
+   Design tokens — extracted from Figma (Proquantic Home Page V2)
+   Color theme variables (consumed by tailwind.config.js)
+   ============================================================ */
+:root {
+  /* Brand */
+  --color-brand-green: #228b00;
+  --color-brand-green-hover: #1c7300;
+  --color-brand-blue: #4253ad;
+  --color-brand-blue-dark: #2031af;
+  --color-brand-blue-accent: #3a49a0;
+
+  /* Ink (text) */
+  --color-ink: #333333;
+  --color-ink-900: #00021d;
+  --color-ink-700: #3b3b3b;
+  --color-ink-500: #424242;
+  --color-ink-300: #6c6c6c;
+  --color-ink-200: #bebebe;
+  --color-ink-100: #cacaca;
+  --color-ink-50:  #313131;
+
+  /* Surfaces */
+  --color-surface: #ffffff;
+  --color-surface-muted: #f6f6f6;
+  --color-surface-dark: #333333;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'SF Pro Display', 'SF Pro', Inter, system-ui, sans-serif;
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Slick carousel tweaks — can't be done with utilities */
+.logo-slider {
+  .slick-track { display: flex; align-items: center; }
+  .slick-slide > div { display: flex; align-items: center; justify-content: center; }
+}
+.hero-slider {
+  .slick-prev, .slick-next { z-index: 10; &::before { color: var(--color-brand-blue-dark); font-size: 32px; } }
+  .slick-dots li button::before { color: var(--color-brand-blue-dark); font-size: 10px; }
+  .slick-dots li.slick-active button::before { color: var(--color-brand-green); }
+}
