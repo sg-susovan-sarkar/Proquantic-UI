@@ -5,10 +5,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        "custom-xl": "1200px",
-        "custom-2xl": "1400px",
         xl: "1200px",
-        "2xl": "1320px",
+        "2xl": "1400px",
       },
       colors: {
         brand: {
@@ -65,9 +63,9 @@ export default {
         phone: "0 40px 80px rgba(32,49,175,.25), 0 8px 24px rgba(0,0,0,.15)",
       },
       backgroundImage: {
-        "hero-glow":
-          "radial-gradient(1200px 600px at 85% 20%, rgba(66,83,173,.08), transparent 60%), radial-gradient(900px 500px at 20% 80%, rgba(34,139,0,.06), transparent 60%), linear-gradient(180deg, #fff 0%, #fafbff 100%)",
+        "hero-glow": "url('/src/assets/images/home-bnr-bg.png')",
         accelerate: "url('/src/assets/images/statistic-bg.jpg')",
+        footer: "url('/src/assets/images/footer-bg.png')",
         "soft-tile":
           "linear-gradient(135deg, rgba(66,83,173,.15), rgba(34,139,0,.10)), linear-gradient(160deg, #eef2ff, #f3fbee)",
         "partner-bg": "url('/src/assets/images/partner-bg.jpg')",
@@ -77,7 +75,7 @@ export default {
       center: true,
       padding: "1.25rem",
       screens: {
-        xl: "1200px",
+        xl: "1140px",
         "2xl": "1320px",
       },
     },
