@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   prefix: "tw-",
-  content: ["./index.html", "./src/**/*.{js,scss}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx,css,scss}"],
   theme: {
     extend: {
       screens: {
@@ -67,10 +67,10 @@ export default {
       backgroundImage: {
         "hero-glow":
           "radial-gradient(1200px 600px at 85% 20%, rgba(66,83,173,.08), transparent 60%), radial-gradient(900px 500px at 20% 80%, rgba(34,139,0,.06), transparent 60%), linear-gradient(180deg, #fff 0%, #fafbff 100%)",
-        accelerate:
-          "linear-gradient(120deg, var(--color-brand-blue) 0%, var(--color-brand-blue-dark) 100%)",
+        accelerate: "url('/src/assets/images/statistic-bg.jpg')",
         "soft-tile":
           "linear-gradient(135deg, rgba(66,83,173,.15), rgba(34,139,0,.10)), linear-gradient(160deg, #eef2ff, #f3fbee)",
+        "partner-bg": "url('/src/assets/images/partner-bg.jpg')",
       },
     },
     container: {
@@ -82,18 +82,18 @@ export default {
       },
     },
   },
-    plugins: [
+  plugins: [
     function ({ addUtilities }) {
       addUtilities({
-        '.border-image-fade': {
-          'border-image-source':
-            'linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 19.71%, #FFFFFF 80.77%, rgba(255, 255, 255, 0) 100%)',
-          'border-image-slice': '1',
+        ".border-image-fade": {
+          "border-image-source":
+            "linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 19.71%, #FFFFFF 80.77%, rgba(255, 255, 255, 0) 100%)",
+          "border-image-slice": "1",
         },
-        '.border-image-fade-primary': {
-          'border-image-source':
-            'linear-gradient(90deg, rgba(66, 83, 173, 0) 0%, #4253AD 17.79%, #4253AD 85.58%, rgba(66, 83, 173, 0) 100%)',
-          'border-image-slice': '1',
+        ".border-image-fade-primary": {
+          "border-image-source":
+            "linear-gradient(90deg, rgba(66, 83, 173, 0) 0%, #4253AD 17.79%, #4253AD 85.58%, rgba(66, 83, 173, 0) 100%)",
+          "border-image-slice": "1",
         },
       });
     },

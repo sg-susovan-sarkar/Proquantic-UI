@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "slick-carousel/slick/slick.scss";
-@import "slick-carousel/slick/slick-theme.scss";
-
 /* ============================================================
    Design tokens — extracted from Figma (Proquantic Home Page V2)
    Color theme variables (consumed by tailwind.config.js)
@@ -15,7 +12,7 @@
   --color-brand-green-hover: #1c7300;
   --color-brand-blue: #4253ad;
   --color-brand-blue-dark: #2031af;
-  --color-brand-blue-accent: #3a49a0;
+  --color-brand-blue-accent: #003FE6;
 
   /* Ink (text) */
   --color-ink: #333333;
@@ -52,6 +49,46 @@ body {
     rgba(102, 102, 102, 0) 100%
   );
   border-image-slice: 1;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Hide extra slider slides until slick initializes (prevents FOUC) */
+.success-slider:not(.slick-initialized) > div + div {
+  display: none;
+}
+
+/* ============================================================
+   Accordion (Bootstrap-style, single-open, animated)
+   ============================================================ */
+.accordion-trigger {
+  background: transparent;
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
+  cursor: pointer;
+}
+.accordion-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 300ms ease;
+}
+.accordion-body-inner {
+  overflow: hidden;
+}
+.accordion-item.is-open {
+  background-color: var(--color-surface-dark);
+}
+.accordion-item.is-open .accordion-title {
+  color: #ffffff;
+}
+.accordion-item.is-open .accordion-trigger {
+  padding-bottom: 30px;
+}
+.accordion-item.is-open .accordion-body {
+  grid-template-rows: 1fr;
 }
 
 /* Animations */

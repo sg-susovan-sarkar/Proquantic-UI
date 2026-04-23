@@ -1,8 +1,3 @@
-import $ from "jquery";
-import "slick-carousel";
-
-window.$ = window.jQuery = $;
-
 $(function () {
   $(".logo-slider").slick({
     autoplay: true,
@@ -21,4 +16,33 @@ $(function () {
       { breakpoint: 480, settings: { slidesToShow: 1 } },
     ],
   });
+
+  $("[data-accordion]").each(function () {
+    const $group = $(this);
+    $group.on("click", ".accordion-trigger", function () {
+      const $item = $(this).closest(".accordion-item");
+      const wasOpen = $item.hasClass("is-open");
+      $group.find(".accordion-item").removeClass("is-open");
+      if (!wasOpen) $item.addClass("is-open");
+    });
+  });
+
+  const $successSlider = $(".success-slider");
+  if ($successSlider.length) {
+    $successSlider.slick({
+      arrows: false,
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+    });
+    $(".success-prev").on("click", function () {
+      $successSlider.slick("slickPrev");
+    });
+    $(".success-next").on("click", function () {
+      $successSlider.slick("slickNext");
+    });
+  }
 });
