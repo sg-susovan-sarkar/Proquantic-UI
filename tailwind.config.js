@@ -76,10 +76,7 @@ export default {
     container: {
       center: true,
       padding: "1.25rem",
-      screens: {
-        xl: "1140px",
-        "2xl": "1320px",
-      },
+      screens: {},
     },
   },
   plugins: [

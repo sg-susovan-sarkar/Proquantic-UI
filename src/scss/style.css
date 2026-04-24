@@ -12,7 +12,7 @@
   --color-brand-green-hover: #1c7300;
   --color-brand-blue: #4253ad;
   --color-brand-blue-dark: #2031af;
-  --color-brand-blue-accent: #003FE6;
+  --color-brand-blue-accent: #003fe6;
 
   /* Ink (text) */
   --color-ink: #333333;
@@ -38,6 +38,18 @@ body {
   font-family: "SF Pro Display", "SF Pro", Inter, system-ui, sans-serif;
   color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
+}
+
+/* Container max-widths decoupled from breakpoint triggers */
+@media (min-width: 1200px) {
+  .tw-container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .tw-container {
+    max-width: 1320px;
+  }
 }
 
 .border-gradient {
