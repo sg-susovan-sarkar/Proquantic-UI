@@ -7,6 +7,7 @@ export default {
       screens: {
         xl: "1200px",
         "2xl": "1400px",
+        "custom-2xl": "1600px",
       },
       colors: {
         brand: {
@@ -46,6 +47,7 @@ export default {
       },
       fontSize: {
         "d-xl": ["100px", { lineHeight: "0.95", letterSpacing: "-0.03em" }],
+        "d-xl-2": ["88px", { lineHeight: "0.95", letterSpacing: "-0.03em" }],
         "d-lg": ["70px", { lineHeight: "1.05", letterSpacing: "-0.02em" }],
         "d-md": ["60px", { lineHeight: "1.05", letterSpacing: "-0.02em" }],
         "h-xl": ["45px", { lineHeight: "1.2", letterSpacing: "-0.02em" }],
