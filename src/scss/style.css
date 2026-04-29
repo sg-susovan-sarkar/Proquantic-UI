@@ -51,6 +51,12 @@ body {
     max-width: 1320px;
   }
 }
+.cs_container{
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+}
 
 .border-gradient {
   border-bottom: 1px solid;

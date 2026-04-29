@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   prefix: "tw-",
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx,css,scss}"],
+  content: ["./*", "./src/**/*.{js,ts,jsx,tsx,css,scss}"],
   theme: {
     extend: {
       screens: {
         xl: "1200px",
         "2xl": "1400px",
+        "custom-xl": "1280px",
         "custom-2xl": "1600px",
       },
       colors: {
@@ -52,8 +53,12 @@ export default {
         "d-md": ["60px", { lineHeight: "1.05", letterSpacing: "-0.02em" }],
         "h-xl": ["45px", { lineHeight: "1.2", letterSpacing: "-0.02em" }],
         "h-lg": ["40px", { lineHeight: "1.2", letterSpacing: "-0.02em" }],
-        "h-md": ["30px", { lineHeight: "1.3" }],
+        "h-md": ["28px", { lineHeight: "1.2", letterSpacing: "-0.02em" }],
         "h-sm": ["25px", { lineHeight: "1.3" }],
+        "h-sm": ["25px", { lineHeight: "1.3" }],
+
+        //New font size for 1200px container
+        "d-md-52": ["52px", { lineHeight: "1.05", letterSpacing: "-0.02em" }],
       },
       borderRadius: {
         pill: "80px",
